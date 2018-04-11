@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/clrBackground"
+    android:id="@+id/vertLayoutRoot"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:paddingTop="0px">
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/RxTap_title_small"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="-20px"
+        android:layout_marginBottom="0px" />
+    <Button
+        android:text="Return to Main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonReturnToMain"
+        android:textAllCaps="false"
+        android:gravity="center_vertical"
+        android:paddingTop="25px"
+        android:paddingBottom="25px"
+        android:layout_marginBottom="-10px"
+        android:layout_marginTop="0px"
+        android:textStyle="normal"
+        android:minHeight="10px"
+        android:textColor="@color/clrWhite" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linearLayout1"
+        android:paddingTop="20px">
+        <RelativeLayout
+            android:id="@+id/relLayoutTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-20px"
+            android:minWidth="25px"
+            android:minHeight="25px" />
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recyclerMedList" />
+    <!--   
+      <Button
+            android:background="@drawable/addPrescriptionButton"
+            android:id="@+id/addPrescriptionButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="+ Add Prescription Manually"
+            style="@style/button_text"
+            android:textColor="@color/clrBackgroundDark"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+            -->
+    </LinearLayout>
+</LinearLayout>

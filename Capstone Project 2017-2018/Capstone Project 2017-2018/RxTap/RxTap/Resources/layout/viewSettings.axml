@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/clrBackground"
+    android:id="@+id/vertLayoutRoot"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:paddingTop="0px">
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/RxTap_title_small"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="-20px"
+        android:layout_marginBottom="0px" />
+    <Button
+        android:text="Return to Main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonReturnToMain"
+        android:textAllCaps="false"
+        android:gravity="center_vertical"
+        android:paddingTop="25px"
+        android:paddingBottom="25px"
+        android:layout_marginBottom="-10px"
+        android:layout_marginTop="0px"
+        android:textStyle="normal"
+        android:minHeight="10px"
+        android:textColor="@color/clrWhite" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linearLayout1"
+        android:paddingTop="20px">
+        <RelativeLayout
+            android:id="@+id/relLayoutTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-20px"
+            android:minWidth="25px"
+            android:minHeight="25px" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout2">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout3"
+                android:gravity="center">
+                <TextView
+                    android:text="Settings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textView1"
+                    android:textSize="50dp"
+                    android:gravity="center"
+                    android:textColor="@color/clrDarkGrey" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout4"
+                android:gravity="center"
+                android:layout_marginTop="20dp">
+                <TextView
+                    android:text="Username:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textView2"
+                    android:gravity="center" />
+                <TextView
+                    android:text="testUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/userText"
+                    android:gravity="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout6">
+                <TextView
+                    android:text="New Username:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textView3"
+                    android:gravity="center" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editText1" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout5"
+                android:gravity="right">
+                <Button
+                    android:text="save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/saveBtn" />
+            </LinearLayout>
+        </LinearLayout>
+        <Button
+            android:text="Test Local Data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/localDataBtn" />
+    </LinearLayout>
+</LinearLayout>

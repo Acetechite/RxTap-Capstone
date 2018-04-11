@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">MVCTestApp</string>
+  <color name="clrWhite">#FFFFFF</color>
+  <color name="clrBlack">#000000</color>
+  <color name="clrBackground">#8bc8f4</color>
+  <color name="clrBackgroundDark">#083e66</color>
+  <color name="clrDarkGrey">#666666</color>
+  <color name="clrLightGrey">#cecece</color>
+  <color name="clrAcceptedGreen">#96ba43</color>
+  <color name="clrRejectedRed">#ba4343</color>
+
+  <string-array name="strengthItems">
+    <item>mg</item>
+    <item>g</item>
+    <item>mcg</item>
+    <item>mL</item>
+  </string-array>
+
+  <string-array name="dispenseItems">
+    <item>capsules</item>
+    <item>tablets</item>
+    <item>pills</item>
+    <item>mL</item>
+  </string-array>
+
+  <string-array name="instructionItems">
+    <item>daily</item>
+    <item>weekly</item>
+    <item>monthly</item>
+  </string-array>
+</resources>

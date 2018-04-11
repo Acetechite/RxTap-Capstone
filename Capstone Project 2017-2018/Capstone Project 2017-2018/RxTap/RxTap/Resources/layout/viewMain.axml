@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/clrBackground"
+    android:id="@+id/vertLayoutRoot"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="400px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/vertLayoutTitle"
+        android:paddingTop="10px"
+        android:paddingBottom="10px">
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/RxTap_title"
+            android:scaleType="fitCenter"
+            android:layout_gravity="center_vertical" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/horLayoutUsrNm">
+        <TextView
+            android:text="Welcome username"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/clrDarkGrey"
+            android:textAlignment="center"
+            android:id="@+id/txtUserName"
+            android:gravity="center_vertical"
+            android:background="@color/clrLightGrey"
+            android:height="120px"
+            android:editable="false"
+            android:width="100dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textStyle="italic"
+            android:paddingLeft="10px" />
+    </LinearLayout>
+    <RelativeLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relLayoutButton"
+        android:layout_marginTop="20px">
+        <Button
+            android:text="Medication History"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnHistory"
+            android:gravity="center"
+            android:width="150dp"
+            android:background="@drawable/button_background"
+            android:height="50dp"
+            android:textColor="@color/clrDarkGrey"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:paddingEnd="240px" />
+        <Button
+            android:text="Settings"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/userSettingBtn"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:minWidth="50dp" />
+    </RelativeLayout>
+</LinearLayout>

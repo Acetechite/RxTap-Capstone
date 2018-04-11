@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/clrRejectedRed"
+    android:id="@+id/vertLayoutRoot"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:paddingTop="20px">
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/RxTap_title_small"
+        android:scaleType="fitCenter" />
+    <TextView
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1"
+        android:text="Hello username, this is your blank dose of the day, please take blank with instructions."
+        android:paddingLeft="20px"
+        android:paddingRight="20px"
+        android:paddingTop="20px"
+        android:paddingBottom="20px" />
+    <ImageView
+        android:src="@drawable/imgReject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView1" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout1"
+        android:layout_marginTop="20px"
+        android:background="@color/clrWhite"
+        android:paddingLeft="20px"
+        android:paddingRight="20px"
+        android:paddingBottom="20px"
+        android:paddingTop="20px">
+        <TextView
+            android:text="Prescription Dose &amp; Name"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:textColor="@color/clrBlack"
+            android:paddingTop="5px"
+            android:gravity="center"
+            android:textStyle="bold" />
+        <TextView
+            android:text="Prescription Instructions"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout2"
+        android:gravity="center">
+        <Button
+            android:text="OK"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/tapOkBtnBad" />
+    </LinearLayout>
+</LinearLayout>

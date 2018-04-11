@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/clrBackground"
+    android:id="@+id/vertLayoutRoot"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:paddingTop="0px">
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/RxTap_title_small"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="-20px"
+        android:layout_marginBottom="0px" />
+    <Button
+        android:text="Return to History"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonReturnToHistory"
+        android:textAllCaps="false"
+        android:gravity="center_vertical"
+        android:paddingTop="25px"
+        android:paddingBottom="25px"
+        android:layout_marginBottom="-10px"
+        android:layout_marginTop="0px"
+        android:textStyle="normal"
+        android:minHeight="10px"
+        android:textColor="@color/clrWhite" />
+    <ScrollView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView1"
+        android:layout_marginBottom="10px"
+        android:layout_marginTop="0px"
+        android:paddingBottom="0px"
+        android:paddingTop="0px">
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:orientation="vertical"
+            android:paddingTop="10px"
+            android:background="@color/clrWhite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10px"
+            android:layout_marginRight="10px"
+            android:layout_marginTop="10px"
+            android:layout_marginBottom="10px"
+            android:paddingBottom="10px"
+            android:paddingLeft="10px"
+            android:paddingRight="10px">
+            <RelativeLayout
+                android:id="@+id/relLayoutTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-20px"
+                android:minWidth="25px"
+                android:minHeight="25px" />
+            <TextView
+                android:text="Medication Name"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textMedName"
+                android:background="@color/clrLightGrey"
+                android:textColor="@color/clrBlack"
+                android:gravity="center" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout2"
+                android:layout_marginTop="10px"
+                android:layout_marginBottom="10px">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/linearMedicationInfo"
+                    android:background="@color/clrLightGrey"
+                    android:layout_marginBottom="10px"
+                    android:paddingBottom="10px"
+                    android:paddingTop="10px"
+                    android:paddingLeft="10px"
+                    android:paddingRight="10px">
+                    <TextView
+                        android:text="- Medication Info -"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textStaticMedInfo"
+                        android:textColor="@color/clrBlack"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal" />
+                    <TextView
+                        android:text="DIN: "
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textDIN"
+                        android:textColor="@color/clrBlack"
+                        android:layout_weight="1" />
+                    <TextView
+                        android:text="Manufacturer: "
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textManufacturer"
+                        android:textColor="@color/clrBlack"
+                        android:layout_weight="1" />
+                    <TextView
+                        android:text="Brand: "
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textBrand"
+                        android:textColor="@color/clrBlack"
+                        android:layout_weight="1" />
+                    <TextView
+                        android:text="Strength: "
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textStrength"
+                        android:textColor="@color/clrBlack"
+                        android:layout_weight="1" />
+                    <TextView
+                        android:text="Dispensed: "
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textDispensed"
+                        android:textColor="@color/clrBlack"
+                        android:layout_weight="1" />
+                    <TextView
+                        android:text="Additional Notes: "
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textNotes"
+                        android:textColor="@color/clrBlack"
+                        android:layout_weight="1" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/linearMedicationInfo"
+                    android:background="@color/clrLightGrey"
+                    android:layout_marginBottom="10px"
+                    android:paddingBottom="10px"
+                    android:paddingTop="10px"
+                    android:paddingLeft="10px"
+                    android:paddingRight="10px">
+                    <TextView
+                        android:text="- Dosage Info -"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textStaticDosage"
+                        android:textColor="@color/clrBlack"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal" />
+                    <TextView
+                        android:text=""
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textDirectionWindow"
+                        android:textColor="@color/clrBlack"
+                        android:layout_weight="1" />
+                    <TextView
+                        android:text=""
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textDirectionInstructions"
+                        android:textColor="@color/clrBlack"
+                        android:layout_weight="1" />
+                    <TextView
+                        android:text=""
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textDirectionTimePreference"
+                        android:textColor="@color/clrBlack"
+                        android:layout_weight="1" />
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/linearUserDoses"
+                        android:background="@color/clrWhite"
+                        android:layout_marginBottom="10px"
+                        android:paddingBottom="10px"
+                        android:paddingTop="10px"
+                        android:paddingLeft="10px"
+                        android:paddingRight="10px">
+                        <TextView
+                            android:text="- Today's History -"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/textStaticDosage"
+                            android:textColor="@color/clrBlack"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearMedicationInfo"
+                android:background="@color/clrLightGrey"
+                android:layout_marginBottom="10px"
+                android:paddingBottom="10px"
+                android:paddingTop="10px"
+                android:paddingLeft="10px"
+                android:paddingRight="10px">
+                <TextView
+                    android:text="- Prescription Info -"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textStaticPrescriptionInfo"
+                    android:textColor="@color/clrBlack"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal" />
+                <TextView
+                    android:text="RX: "
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textRX"
+                    android:textColor="@color/clrBlack"
+                    android:layout_weight="1" />
+                <TextView
+                    android:text="Refills: "
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textRefills"
+                    android:textColor="@color/clrBlack"
+                    android:layout_weight="1" />
+                <TextView
+                    android:text="Filled: "
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textDateFilled"
+                    android:textColor="@color/clrBlack"
+                    android:layout_weight="1" />
+                <TextView
+                    android:text="Physician: "
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textPhysician"
+                    android:textColor="@color/clrBlack"
+                    android:layout_weight="1" />
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/linearUserDoses"
+                    android:background="@color/clrWhite"
+                    android:layout_marginBottom="10px"
+                    android:paddingBottom="10px"
+                    android:paddingTop="10px"
+                    android:paddingLeft="10px"
+                    android:paddingRight="10px">
+                    <TextView
+                        android:text="- Pharmacy -"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textStaticPharmacy"
+                        android:textColor="@color/clrBlack"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal" />
+                    <TextView
+                        android:text="Name: "
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textPharmacyName"
+                        android:textColor="@color/clrBlack"
+                        android:layout_weight="1" />
+                    <TextView
+                        android:text="Address: "
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textPharmacyAddress"
+                        android:textColor="@color/clrBlack"
+                        android:layout_weight="1" />
+                    <TextView
+                        android:text="Phone: "
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textPharmacyPhone"
+                        android:textColor="@color/clrBlack"
+                        android:layout_weight="1" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout7"
+                android:gravity="right"
+                android:layout_marginRight="5dp">
+                <Button
+                    android:text="+ Take Dose Now"
+                    android:layout_width="300dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/addDoseBtn"
+                    android:background="@color/clrBackgroundDark"
+                    android:textColor="@color/clrWhite" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:id="@+id/linearLayout6"
+                android:gravity="right"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp">
+                <Button
+                    android:text="Delete"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/deletePrescBtn"
+                    android:background="@color/clrRejectedRed"
+                    android:textColor="@color/clrWhite" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
